@@ -1,11 +1,11 @@
-#include<stlib.h>
-#include<time.h>
-#include<stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 
 /**
- * main-Determines if a number is positive, negative or zero.
- *
- * Return: Always 0 (Success)
+ * main - Entry point
+ * Description: 'check for number if it is posible or negative'
+ * Return: Always 0
  */
 int main(void)
 {
@@ -13,17 +13,16 @@ int main(void)
 
         srand(time(0));
         n = rand() - RAND_MAX / 2;
-        if (n>0)
+        if (n >0)
         {
-                printf("%d is positive\n",n);
-        }
-        else if (n==0)
-        {
-                prinyf("%d is zero\n",n);
-	}
-	else
+                printf("%d is positive\n", n);               }
+        else if (n == 0)
 	{
-		printf("%d is negative\n",n);
-	}
-	return(0);
-}
+                printf("%d is zero\n", n);
+        }            
+        else
+        {       
+                printf("%d is negative\n", n);   
+        }
+        return (0);
+}		
