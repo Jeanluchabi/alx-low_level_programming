@@ -8,7 +8,7 @@
 void puts2(char *str)
 {
 	int longi = 0;
-	int i = 0;
+	int t = 0;
 	char *y = str;
 	int o;
 
@@ -17,7 +17,7 @@ void puts2(char *str)
 		y++;
 		longi++;
 	}
-	t = lpngi - 1;
+	t = longi - 1;
 	for (o = 0; o <= t; o++)
 	{
 
@@ -26,5 +26,5 @@ void puts2(char *str)
                 _putchar(str[o]);
 		}
 	}
-        _putchar('\n')
+        _putchar('\n');
 }
