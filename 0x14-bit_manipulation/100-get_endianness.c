@@ -3,13 +3,14 @@
 #include <stdlib.h>
 
 /**
- * get_endianness - A  function that checks the endianness.
- * Return: 0 if big endian, 1 if little endian.
+ * get_endianness - A  function to check if the machine is
+ * a little or big endian.
+ * Return: 0 for big and 1 for little.
  */
 int get_endianness(void)
 {
-	unsigned int x = 1;
-	char *n = (char *) &x;
+	unsigned int i = 0;
+	char *c = (char *) &i;
 
-	return(*n);
+	return (*c);
 }
