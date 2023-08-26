@@ -13,15 +13,15 @@ int _putchar(char c);
 int append_text_to_file(const char *filename, char *text_content);
 void error_file(int file_f, int file_t, char *argv[]);
 int main(int argc, char *argv[]);
-void check_elf(unsigned char *e_id);
-void print_magic(unsigned char *e_id);
-void print_class(unsigned char *e_id);
-void print_data(unsigned char *e_id);
-void print_version(unsigned char *e_id);
-void print_abi(unsigned char *e_id);
-void print_osabi(unsigned char *e_id);
-void print_type(unsigned int e_typ, unsigned char *e_id);
-void print_entry(unsigned long int e_begin, unsigned char *e_id);
+void check_elf(unsigned char *e_ident);
+void print_magic(unsigned char *e_ident);
+void print_class(unsigned char *e_ident);
+void print_data(unsigned char *e_ident);
+void print_version(unsigned char *e_ident);
+void print_abi(unsigned char *e_ident);
+void print_osabi(unsigned char *e_ident);
+void print_type(unsigned int e_type, unsigned char *e_ident);
+void print_entry(unsigned long int e_begin, unsigned char *e_ident);
 void close_elf(int cl);
 
 #endif
