@@ -3,19 +3,23 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "search_algos.h"
+#include <math.h>
 
 /**
- * struct listint_s - Singly linked list node structure.
+ * struct listint_s - singly linked list
  *
- * @n: Integer stored at the node.
- * @index: Index of the node in the list.
- * @next: Pointer to the next node.
+ * @n: Integer
+ * @index: Index of the node in the list
+ * @next: Pointer to the next node
+ *
+ * Description: singly linked list node structure
  */
 typedef struct listint_s
 {
-    int n;               /* Integer stored at the node. */
-    size_t index;        /* Index of the node in the list. */
-    struct listint_s *next; /* Pointer to the next node. */
+    int n;
+    size_t index;
+    struct listint_s *next;
 } listint_t;
 
 /**
@@ -28,10 +32,10 @@ typedef struct listint_s
  */
 typedef struct skiplist_s
 {
-    int n;               /* Integer stored at the node. */
-    size_t index;        /* Index of the node in the list. */
-    struct skiplist_s *next;    /* Pointer to the next node. */
-    struct skiplist_s *express; /* Pointer to the next node in the express lane. */
+    int n;              
+    size_t index;        
+    struct skiplist_s *next;    
+    struct skiplist_s *express; 
 } skiplist_t;
 
 /* Function prototypes for various search algorithms */
